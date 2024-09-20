@@ -11,8 +11,11 @@ void solve()
     cin >> t;
     while (t--)
     {
-        int a, b, m;
-        cout << (m / a + m / b + 2) << endl;
+        int x, y, k, result = 0;
+        cin >> x >> y >> k;
+
+        result = x > y ? (2 * ceil(x / k)) : (2 * ceil(y / k));
+        cout << result << " " << ceil(x / k) << " " << ceil(y / k) << endl;
     }
 }
 int main()

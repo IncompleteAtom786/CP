@@ -11,18 +11,21 @@ void solve()
     cin >> t;
     while (t--)
     {
-        int x, y, k, result = 0;
-        cin >> x >> y >> k;
+        int n, m, q;
+        cin >> n >> m >> q;
+        
+        int t1, t2;
+        cin >> t1 >> t2;
 
-        int i_x = 0, i_y = 0;
-        bool X = true;
-        while(i_x < x || i_y < y)
+        int david, result;
+        cin >> david;
+
+        if(david < t1) result = t1 - 1;
+        else if (david > t2) result = n - t2;
+        else
         {
-            if(X) i_x += k;
-            else i_y += k;
-
-            X = !X;
-            result++;
+            int middle = (t2 + t1) / 2;
+            result = min(abs(middle - t1), abs(middle - t2));
         }
 
         cout << result << endl;

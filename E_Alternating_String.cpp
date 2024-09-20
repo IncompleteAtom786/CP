@@ -11,8 +11,7 @@ void solve()
     cin >> t;
     while (t--)
     {
-        int a, b, m;
-        cout << (m / a + m / b + 2) << endl;
+        
     }
 }
 int main()

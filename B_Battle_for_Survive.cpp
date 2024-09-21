@@ -11,9 +11,16 @@ void solve()
     cin >> t;
     while (t--)
     {
-        int n, m, k;
-        cin >> n >> m >> k;
-        cout << min(n, k) * min(m, k) << endl;
+        int n;
+        cin >> n;
+
+        vector<int> v(n);
+        for(int i = 0; i < n; i++) cin >> v[i];
+
+        long long result = 0;
+        for(auto &r : v) result += r;
+
+        cout << result - (2 * v[n - 2]) << endl;
     }
 }
 int main()

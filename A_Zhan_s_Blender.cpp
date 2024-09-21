@@ -11,9 +11,12 @@ void solve()
     cin >> t;
     while (t--)
     {
-        int n, m, k;
-        cin >> n >> m >> k;
-        cout << min(n, k) * min(m, k) << endl;
+        int n, x, y;
+        cin >> n;
+        cin >> x >> y;
+
+        int blend = min(x, y);
+        cout << (n / blend) + (n % blend ? 1 : 0) << endl;
     }
 }
 int main()

@@ -65,7 +65,8 @@
     "utility": "cpp",
     "chrono": "cpp",
     "xlocale": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }
